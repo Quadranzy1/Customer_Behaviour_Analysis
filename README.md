@@ -1,2 +1,111 @@
-# Customer_Behaviour_Analysis
-Data analytics project, showcasing customer behaviour analysis using python, sql and power bi
+# 🛍️ Consumer Shopping Behavior Analysis
+
+![Python](https://img.shields.io/badge/Python-3.9+-blue?style=for-the-badge&logo=python)
+![SQL](https://img.shields.io/badge/MySQL-8.0-orange?style=for-the-badge&logo=mysql)
+![Power BI](https://img.shields.io/badge/Power_BI-Dashboard-yellow?style=for-the-badge&logo=powerbi)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=for-the-badge&logo=pandas)
+
+## 📖 Project Overview
+This project analyzes a dataset of **3,900 consumer transactions** to understand purchasing behavior, identify revenue drivers, and optimize marketing strategies. 
+
+Using **Python** for data cleaning, **SQL** for in-depth analysis, and **Power BI** for visualization, I solved key business problems regarding customer segmentation, subscription effectiveness, and demographic trends.
+
+---
+
+## 📂 Table of Contents
+- [Business Problem](#-business-problem)
+- [Data Source](#-data-source)
+- [Tech Stack](#-%EF%B8%8F-tech-stack)
+- [Methodology](#-methodology)
+- [Key Insights](#-key-insights)
+- [Recommendations](#-recommendations)
+- [Project Structure](#-project-structure)
+
+---
+
+## ❓ Business Problem
+A retail company noticed shifts in purchasing patterns across demographics and wanted to leverage their data to answer:
+1.  **Who are the most profitable customers?** (Age, Gender, Location)
+2.  **Does the subscription model actually increase revenue?**
+3.  **Which products drive customer satisfaction and retention?**
+4.  **How can we better segment our customers for targeted marketing?**
+
+---
+
+## 💾 Data Source
+The dataset consists of **3,900 records** with 18 columns, including:
+- **Demographics:** Age, Gender, Location
+- **Product Info:** Category, Item Purchased, Size, Color
+- **Transaction Info:** Purchase Amount (USD), Payment Method, Shipping Type
+- **Status:** Subscription Status, Discount Applied, Frequency of Purchases
+
+---
+
+## 🛠️ Tech Stack
+| Tool | Purpose |
+| :--- | :--- |
+| **Python (Pandas)** | Data cleaning, null value handling, and feature engineering. |
+| **SQLAlchemy** | Establishing connection between Python and MySQL database. |
+| **MySQL** | Executing complex queries to answer specific business questions. |
+| **Power BI** | Creating interactive dashboards to visualize the insights. |
+
+---
+
+## 🔍 Methodology
+
+### 1. Data Cleaning & Feature Engineering (Python)
+- **Null Handling:** Imputed missing `Review Rating` values using the median rating of the respective product `Category`.
+- **Standardization:** Renamed columns to `snake_case` for SQL compatibility.
+- **Feature Engineering:**
+    - Created `age_group` bins (*Young Adult, Adult, Middle-aged, Old*).
+    - Converted text-based frequencies (e.g., "Weekly") into numeric `purchase_frequency_days`.
+
+### 2. Exploratory Data Analysis (SQL)
+Loaded the cleaned data into MySQL to answer 10 specific business questions, such as:
+- Calculating revenue contribution by Gender and Age.
+- Analyzing the correlation between subscriptions and spending.
+- Identifying "Hero Products" based on high review ratings.
+- Segmenting customers into **New**, **Returning**, and **Loyal**.
+
+---
+
+## 📊 Key Insights
+
+### 1. 💰 The Gender Revenue Gap
+Male customers generate **more than double ($157k)** the revenue of female customers ($75k). The product mix or marketing strategy appears heavily skewed toward men.
+
+### 2. 📉 The Subscription Paradox
+Subscribers do **not** spend more per transaction than non-subscribers.
+- **Subscriber Avg Spend:** $59.49
+- **Non-Subscriber Avg Spend:** $59.87
+*Current subscriptions drive frequency, but not basket size.*
+
+### 3. 🏆 High Customer Loyalty
+**80%** of the customer base falls into the "Loyal" segment (>10 purchases). While retention is excellent, new customer acquisition is low.
+
+### 4. 👥 Age Demographics
+**Young Adults** and **Middle-Aged** customers are the top revenue contributors. The "Old" demographic contributes the least.
+
+### 5. ⭐ Hero Products
+The items with the highest customer satisfaction (Review Ratings) are **Gloves (3.86)** and **Sandals (3.84)**.
+
+---
+
+## 💡 Recommendations
+1.  **Target the "Middle-Aged" Demographic:** Optimize ad spend on channels favored by this group (e.g., Facebook, Email) as they yield the highest ROI.
+2.  **Revamp Subscription Perks:** Introduce "Exclusive Bundles" or "Minimum Spend Rewards" for subscribers to increase their Average Order Value (AOV).
+3.  **Referral Program:** Leverage the massive "Loyal" user base by implementing a referral program to drive new customer acquisition.
+
+---
+
+## 📁 Project Structure
+```bash
+├── data/
+│   └── customer_shopping_behavior.csv    # Raw dataset
+├── notebooks/
+│   └── Data_Cleaning_Analysis.ipynb      # Python data prep & feature engineering
+├── sql/
+│   └── customer_behavior_queries.sql     # SQL scripts for analysis
+├── docs/
+│   └── Analysis_Report.pdf               # Final detailed report
+└── README.md                             # Project documentation
