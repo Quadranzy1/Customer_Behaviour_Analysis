@@ -1,4 +1,5 @@
-# 🛍️ Consumer Shopping Behavior Analysis
+# 🛍️ Customer Behavior Data Analyst Portfolio Project
+This project represents a complete, industry standard, end-to-end data analytics workflow, designed to mirror the real responsibilities of professional analysts in modern business environments. The project encompasses all critical stages of data analysis, from data preparation and modeling to insight generation, visualization, and reporting.
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue?style=for-the-badge&logo=python)
 ![SQL](https://img.shields.io/badge/MySQL-8.0-orange?style=for-the-badge&logo=mysql)
@@ -6,11 +7,18 @@
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=for-the-badge&logo=pandas)
 
 ## 📖 Project Overview
-This project analyzes a dataset of **3,900 consumer transactions** to understand purchasing behavior, identify revenue drivers, and optimize marketing strategies. 
+The goal of this project is to simulate a corporate-grade end-to-end data analytics workflow, demonstrating the ability to translate raw data into strategic business intelligence by:
 
-Using **Python** for data cleaning, **SQL** for in-depth analysis, and **Power BI** for visualization, I solved key business problems regarding customer segmentation, subscription effectiveness, and demographic trends.
+✅ Data Preparation and Modeling (Python): Clean and transform the raw dataset for analysis.
 
+✅ Data Analysis (SQL): Simulate business transactions, and run queries to extract insights on customer segments, loyalty, and purchase drivers.
+
+✅ Visualization & Insights (Power BI): Build an interactive dashboard that highlights key patterns and trends, enabling stakeholders to make data-driven decisions.
+
+✅ Report and Presentation: Write a clear project report summarizing your key findings and business recommendations. Prepare a presentation that visually communicates insights and actionable recommendations to stakeholders.
 ---
+
+![Project Workflow](https://github.com/user-attachments/assets/8bbd5dc9-eb6c-40c1-8f19-c08b4107f654)
 
 ## 📂 Table of Contents
 - [Business Problem](#-business-problem)
@@ -98,6 +106,14 @@ The items with the highest customer satisfaction (Review Ratings) are **Gloves (
 
 ---
 
+## 📜 License
+
+MIT — feel free to fork, star, and use in your portfolio.
+
+## 👨‍💻 About the Author
+Hey, I’m Adediran Quadri, a Data Analyst & Economics Tutor.
+I break down complex data topics into simple, practical content that actually helps you land a job.
+
 ## 📁 Project Structure
 ```bash
 ├── data/
@@ -109,3 +125,6 @@ The items with the highest customer satisfaction (Review Ratings) are **Gloves (
 ├── docs/
 │   └── Analysis_Report.pdf               # Final detailed report
 └── README.md                             # Project documentation
+
+
+## 💡 Thanks for checking out the project! Your support means a lot! Feel free to star ⭐ this repo or share it with someone learning Data Analytics.🚀
