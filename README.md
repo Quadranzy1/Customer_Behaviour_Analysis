@@ -100,10 +100,11 @@ The items with the highest customer satisfaction (Review Ratings) are **Gloves (
 ---
 
 ## 💡 Recommendations
-1.  **Target the "Middle-Aged" Demographic:** Optimize ad spend on channels favored by this group (e.g., Facebook, Email) as they yield the highest ROI.
-2.  **Revamp Subscription Perks:** Introduce "Exclusive Bundles" or "Minimum Spend Rewards" for subscribers to increase their Average Order Value (AOV).
-3.  **Referral Program:** Leverage the massive "Loyal" user base by implementing a referral program to drive new customer acquisition.
-
+● Boost Subscriptions – Promote exclusive benefits for subscribers.
+● Customer Loyalty Programs – Reward repeat buyers to move them into the “Loyal” segment.
+● Review Discount Policy – Balance sales boosts with margin control.
+● Product Positioning – Highlight top-rated and best-selling products in campaigns.
+● Targeted Marketing – Focus efforts on high-revenue age groups and express-shipping users.
 ---
 
 ## 📜 License
@@ -112,7 +113,7 @@ MIT — feel free to fork, star, and use in your portfolio.
 
 ## 👨‍💻 About the Author
 Hey, I’m Adediran Quadri, a Data Analyst & Economics Tutor.
-I break down complex data topics into simple, practical content that actually helps you land a job.
+
 
 ## 📁 Project Structure
 ```bash
